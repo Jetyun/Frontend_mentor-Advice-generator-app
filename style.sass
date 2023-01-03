@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap')
+*
+    font-family: 'Manrope', sans-serif
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+//compulsory class for FrontendMentor challenge
+.attribution 
+    font-size: 11px
+    text-align: center
+    margin-top: 60px
+.attribution a 
+    color: hsl(228, 45%, 44%)
+//SASS variable
+$primary_one: hsl(193, 38%, 86%) //light cyan
+$primary_two: hsl(150, 100%, 66%)// neon green
+$neutral_one: hsl(217, 19%, 38%)// grayish blue
+$neutral_two: hsl(217, 19%, 24%) // dark grayish blue
+$neutral_three: hsl(218, 23%, 16%)//dark blue
+$font_weight: 800
+$quote_font_size: 1.65rem
+
+//tag
+body
+    background-color: $neutral_three
+    padding: 200px 0
+
+main
+    background-color: $neutral_two
+    width: min(90%, 455px)
+    height: 279px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    margin: auto
+    border-radius: 10px
+    position: relative
+    padding: 30px
+//class
+.primary_
+    
+    &title
+        font-size: .7rem
+        color: $primary_two
+        text-transform: uppercase
+        letter-spacing: 5px    
+    &button_bg
+        height: 56px
+        width: 56px
+        background-color: $primary_two
+        border-radius: 100px
+        padding: 16px 16px 13px 16px
+        position: absolute  
+        bottom: -25px
+    &button_bg:hover, &button::before
+        box-shadow: 0px 0px 20px $primary_two
+    &explanation
+        text-transform: uppercase
+        color: $primary_one
+        font-size: 1.2rem
+        text-align: center
+    
+.-mobile
+    width: min(295px, 80%)
+    margin-bottom: 30px 
+.-desktop
+    display: none
+    max-width: min(444px, 80%)
+    margin-bottom: 30px 
+
+@media only screen and (min-width: 444px)
+    .-desktop
+        display: block
+    .-mobile
+        display: none
+    .primary_explanation
+        font-size: $quote_font_size
+
+    
+     
+
+
+
+    
