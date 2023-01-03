@@ -54,7 +54,6 @@ main {
   box-shadow: 0px 0px 20px hsl(150deg, 100%, 66%);
 }
 .primary_explanation {
-  text-transform: uppercase;
   color: hsl(193deg, 38%, 86%);
   font-size: 1.2rem;
   text-align: center;
